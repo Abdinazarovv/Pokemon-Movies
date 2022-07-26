@@ -14,30 +14,22 @@ let moviesArray = movies.slice(0, 151);
 elBtn1.addEventListener("click", function () {
     elList.innerHTML = null
     render(pokemonArray)
-    elPokemonLogo.style = "display:block"
-    elMoviesLogo.style = "display:none"
 });
 
 elBtn2.addEventListener("click", function () {
     elList.innerHTML = null
     render(moviesArray)
-    elMoviesLogo.style = "display:block"
-    elPokemonLogo.style = "display:none"
 });
 
 bothBtn.addEventListener("click", function () {
     elList.innerHTML = null
     render(bothArray)
-    elMoviesLogo.style = "display:block"
-    elPokemonLogo.style = "display:block"
 });
 
 elBtnClean.addEventListener("click", function () {
     elList.innerHTML = null
     elList.innerHTML = `<li class="list__item text-center m-0">Choose buttons!</li>`
     elResult.textContent = "Cleaned" 
-    elPokemonLogo.style = "display:none"
-    elMoviesLogo.style = "display:none"
 });
 
 function render(array) {
